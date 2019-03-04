@@ -14,6 +14,16 @@ console.log(average( 3, 6, function (n1, n2){
     return n1 + n2;
 }));
 
+// var makeServerCall  = function(cb) {
+//     var result = fetchResult();
+//     cb(result);
+// }
+// makeServerCall(function(result) {
+//     process(result);
+// });
+// doSomethingElse();
+
+
 var add = new Function('add', 'return n1 + n2;');
 
 console.log(add);
