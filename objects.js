@@ -71,6 +71,17 @@ cat.speak = function() {
 console.log(cat.numOfLegs);
 cat.speak();
 
+console.log(cat.hasOwnProperty('numOfLegs'));
+console.log('----')
+for(key in cat) {
+    console.log(key);
+    console.log(cat.hasOwnProperty(key));
+}
+
+
+
+
+
 
 
 

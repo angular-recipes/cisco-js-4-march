@@ -2,6 +2,8 @@ var num1 = 3;
 var add = function (n1, n2) {
     return n1 + n2;
 };
+
+console.log(add);
 console.log(add(3,4));
 
 var average  = function(n1, n2, adderFunction) {
@@ -11,5 +13,9 @@ var average  = function(n1, n2, adderFunction) {
 console.log(average( 3, 6, function (n1, n2){
     return n1 + n2;
 }));
+
+var add = new Function('add', 'return n1 + n2;');
+
+console.log(add);
 
 
