@@ -31,6 +31,21 @@ console.log(employee);
 employee.tellCompany();
 employee.introduce();
 
+//Extend inbuilt classes
+
+var MyString = function(s) {
+    String.apply(this, [s])
+};
+
+MyString.prototype = new String();
+MyString.prototype.toString = function() {
+
+};
+
+var s = new MyString('Hello world');
+
+console.log(s.toUpperCase());
+
 
 
 

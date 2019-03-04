@@ -24,7 +24,7 @@ console.log(average( 3, 6, function (n1, n2){
 // doSomethingElse();
 
 
-var add = new Function('add', 'return n1 + n2;');
+//var add = new Function('add', 'return n1 + n2;');
 
 console.log(add);
 
