@@ -2,7 +2,7 @@
 var Person = function(name, age) {
     this.name = name;
     this.age = age;
-}
+};
 
 Person.prototype.introduce = function() {
     console.log('Hey! I am ' + this.name + ' and ' + this.age + 'yrs old');        
