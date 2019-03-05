@@ -14,6 +14,10 @@ for(el of person) {
     console.log(el);
 }
 
+for([key, value] of person) {
+    console.log(key, value);
+}
+
 for(key of person.keys()) {
     console.log(key);
 }
